@@ -1,12 +1,14 @@
 {
-  "name": "UsefulTS",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "usefults",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "repository": "git@github.com:roshanlam/UsefulTS.git",
   "author": "Roshan <lamichhaner40@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^20.1.7",

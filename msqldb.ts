@@ -33,7 +33,7 @@ async function selectAllData(connection: Connection, table: string): Promise<Row
 }
 
 
-export default {
+export {
     connectToMySQLDatabase,
     executeQuery,
     insertData,

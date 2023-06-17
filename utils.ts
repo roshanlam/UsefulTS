@@ -18,7 +18,7 @@ export function deepClone<T>(obj: T): T{
  */
 export function debounce(func: Function, delay: number){
     let timer: NodeJS.Timeout;
-    return function (...args: any[]) {
+    return function (this: any, ...args: any[]) {
         clearTimeout(timer);
         timer = setTimeout(() => func.apply(this, args), delay);
       };
@@ -34,7 +34,7 @@ export function debounce(func: Function, delay: number){
  */
 export function throttle(func: Function, delay: number) {
     let lastCall = 0;
-    return function (...args: any[]) {
+    return function (this: any, ...args: any[]) {
       const now = new Date().getTime();
       if (now - lastCall >= delay) {
         func.apply(this, args);

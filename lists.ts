@@ -119,3 +119,5 @@ class List<T> implements IList<T> {
         return list;
     }
 }
+
+export { List, ListEnumerator, IList, IEnumerator };

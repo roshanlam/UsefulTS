@@ -33,3 +33,5 @@ function saveJSON(data: any, fileName: string): void {
       throw new Error(`Error writing file ${fileName}: ${err as string}`);
     }
   }
+
+export { openJSON, saveJSON };

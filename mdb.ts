@@ -61,7 +61,7 @@ async function listDatabases(client: MongoClient): Promise<string[]> {
 }
 
 
-export default {
+export {
     connectToMongoDB,
     queryDocuments,
     insertDocument,
