@@ -1,3 +1,5 @@
+import { mkdirSync } from 'fs';
+
 /**
  * 
  * @param obj The object to be cloned.
@@ -153,6 +155,9 @@ export function getValues(obj: object): any[] {
     return Object.values(obj);
 }
 
+export function createDirectory(path: string): void {
+    mkdirSync(path, { recursive: true });
+}
 
 export default {
     deepClone,
